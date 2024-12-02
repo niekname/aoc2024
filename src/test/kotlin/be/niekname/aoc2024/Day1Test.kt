@@ -18,7 +18,7 @@ class Day1Test {
     inner class Part1Test {
         @Test
         fun `total distance between lists`() {
-            val result = Part1().totalDistanceBetweenLists(exampleInput)
+            val result = Day1Part1().totalDistanceBetweenLists(exampleInput)
             assertThat(result).isEqualTo(11)
         }
     }
@@ -27,7 +27,7 @@ class Day1Test {
     inner class Part2Test {
         @Test
         fun `similarity score`() {
-            val result = Part2().similarityScore(exampleInput)
+            val result = Day1Part2().similarityScore(exampleInput)
             assertThat(result).isEqualTo(31)
         }
     }
