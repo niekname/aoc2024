@@ -23,4 +23,13 @@ class Day2Test {
         }
     }
 
+    @Nested
+    inner class Part2Test {
+        @Test
+        fun `number of safe reports`() {
+            val result = Day2Part2().numberOfSafeReports(exampleInput)
+            assertThat(result).isEqualTo(4)
+        }
+    }
+
 }
