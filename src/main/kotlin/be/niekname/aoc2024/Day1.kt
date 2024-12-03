@@ -21,7 +21,8 @@ class Day1Part2 {
     }
 }
 
-private fun parseInput(input: String) = input.lines().map { line ->
-    val (left, right) = line.split("\\s+".toRegex()).map { it.toInt() }
-    left to right
-}.unzip()
+private fun parseInput(input: String) =
+    input.lines().map { line ->
+        val (left, right) = line.split("\\s+".toRegex()).map { it.toInt() }
+        left to right
+    }.unzip()
