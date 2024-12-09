@@ -1,7 +1,7 @@
 package be.niekname.aoc2024
 
 fun main() {
-    val input = Day3Part1().javaClass.getResource("day3part1")!!.readText()
-    val result = Day3Part1().fixCorruptedMemory(input)
+    val input = Day4Part1::class.java.getResource("day4part1")!!.readText()
+    val result = Day4Part1(input).findXmas()
     println("result = $result")
 }
