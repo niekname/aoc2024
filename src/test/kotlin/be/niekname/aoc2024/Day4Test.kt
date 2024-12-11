@@ -26,4 +26,13 @@ class Day4Test {
             assertThat(result).isEqualTo(18)
         }
     }
+
+    @Nested
+    inner class Part2Test {
+        @Test
+        fun `find XMAS`() {
+            val result = Day4Part2(exampleInput).findXmas()
+            assertThat(result).isEqualTo(9)
+        }
+    }
 }
