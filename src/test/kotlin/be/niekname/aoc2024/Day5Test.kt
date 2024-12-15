@@ -44,4 +44,13 @@ class Day5Test {
             assertThat(result).isEqualTo(143)
         }
     }
+
+    @Nested
+    inner class Part2Test {
+        @Test
+        fun `correctly ordered updates`() {
+            val result = Day5Part2(exampleInput).correctlyOrderedUpdates()
+            assertThat(result).isEqualTo(123)
+        }
+    }
 }
